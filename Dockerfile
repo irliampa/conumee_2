@@ -8,4 +8,5 @@ RUN mkdir /home/scripts
 ADD dependencies.R /home/scripts/dependencies.R
 RUN Rscript /home/scripts/dependencies.R
 
+WORKDIR /home/scripts/
 CMD R
