@@ -1,5 +1,5 @@
 update.packages()
 source("https://bioconductor.org/biocLite.R")
-biocLite("DelayedArray")
-biocLite("HDF5Array")
-biocLite("conumee")
+biocLite("DelayedArray", ask = F)
+biocLite("HDF5Array", ask = F)
+biocLite("conumee", ask = F)
