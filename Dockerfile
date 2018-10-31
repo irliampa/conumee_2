@@ -7,7 +7,6 @@ RUN apt-get install -y libpcre3-dev libbz2-dev liblzma-dev
 RUN mkdir /home/scripts
 ADD dependencies.R /home/scripts/dependencies.R
 
-
 WORKDIR /home/scripts/
 RUN Rscript /home/scripts/dependencies.R
 
