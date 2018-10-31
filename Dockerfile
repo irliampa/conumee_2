@@ -3,7 +3,7 @@ FROM bioconductor/devel_core2
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get install build-essential
 RUN apt-get install -y libpcre3-dev libbz2-dev liblzma-dev
-RUN apt install gfortran-4.9.3
+RUN apt install gfortran-4
 
 RUN mkdir /home/scripts
 ADD dependencies.R /home/scripts/dependencies.R
