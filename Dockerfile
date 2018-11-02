@@ -5,14 +5,14 @@ RUN apt-get install build-essential
 RUN apt-get install -y libpcre3-dev libbz2-dev liblzma-dev
 
 RUN mkdir ~/gcc-4.9-deb && cd ~/gcc-4.9-deb \
-    wget http://launchpadlibrarian.net/247707088/libmpfr4_3.1.4-1_amd64.deb \
-    wget http://launchpadlibrarian.net/253728424/libasan1_4.9.3-13ubuntu2_amd64.deb \
-    wget http://launchpadlibrarian.net/253728426/libgcc-4.9-dev_4.9.3-13ubuntu2_amd64.deb \
-    wget http://launchpadlibrarian.net/253728314/gcc-4.9-base_4.9.3-13ubuntu2_amd64.deb \
-    wget http://launchpadlibrarian.net/253728399/cpp-4.9_4.9.3-13ubuntu2_amd64.deb \
-    wget http://launchpadlibrarian.net/253728404/gcc-4.9_4.9.3-13ubuntu2_amd64.deb \
-    wget http://launchpadlibrarian.net/253728432/libstdc++-4.9-dev_4.9.3-13ubuntu2_amd64.deb \
-    wget http://launchpadlibrarian.net/253728401/g++-4.9_4.9.3-13ubuntu2_amd64.deb
+    wget http://launchpadlibrarian.net/247707088/libmpfr4_3.1.4-1_amd64.deb -O libmpfr4_3.1.4-1_amd64.deb \
+    wget http://launchpadlibrarian.net/253728424/libasan1_4.9.3-13ubuntu2_amd64.deb -O libasan1_4.9.3-13ubuntu2_amd64.deb \
+    wget http://launchpadlibrarian.net/253728426/libgcc-4.9-dev_4.9.3-13ubuntu2_amd64.deb -O libgcc-4.9-dev_4.9.3-13ubuntu2_amd64.deb \
+    wget http://launchpadlibrarian.net/253728314/gcc-4.9-base_4.9.3-13ubuntu2_amd64.deb -O gcc-4.9-base_4.9.3-13ubuntu2_amd64.deb \
+    wget http://launchpadlibrarian.net/253728399/cpp-4.9_4.9.3-13ubuntu2_amd64.deb -O cpp-4.9_4.9.3-13ubuntu2_amd64.deb \
+    wget http://launchpadlibrarian.net/253728404/gcc-4.9_4.9.3-13ubuntu2_amd64.deb -O gcc-4.9_4.9.3-13ubuntu2_amd64.deb \
+    wget http://launchpadlibrarian.net/253728432/libstdc++-4.9-dev_4.9.3-13ubuntu2_amd64.deb -O ibstdc++-4.9-dev_4.9.3-13ubuntu2_amd64.deb\
+    wget http://launchpadlibrarian.net/253728401/g++-4.9_4.9.3-13ubuntu2_amd64.deb -O g++-4.9_4.9.3-13ubuntu2_amd64.deb
 RUN dpkg -i gcc-4.9-base_4.9.3-13ubuntu2_amd64.deb \
     dpkg -i libmpfr4_3.1.4-1_amd64.deb \
     dpkg -i libasan1_4.9.3-13ubuntu2_amd64.deb \
