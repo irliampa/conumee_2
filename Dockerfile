@@ -1,4 +1,4 @@
-FROM bioconductor/devel_core2
+FROM bioconductor/release_core2
 
 RUN apt-get update --fix-missing && apt-get -y upgrade && apt-get dist-upgrade
 RUN apt-get install build-essential
