@@ -34,5 +34,6 @@ RUN mkdir /home/scripts
 ADD dependencies.R /home/scripts/dependencies.R
 
 WORKDIR /home/scripts/
+RUN Rscript /home/scripts/dependencies.R
 
 CMD R
