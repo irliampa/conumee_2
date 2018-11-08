@@ -12,11 +12,13 @@ RUN dpkg -i /home/libraries/libmpfr4_3.1.4-1_amd64.deb
 RUN wget http://launchpadlibrarian.net/253728314/gcc-4.9-base_4.9.3-13ubuntu2_amd64.deb -O /home/libraries/gcc-4.9-base_4.9.3-13ubuntu2_amd64.deb 
 RUN dpkg -i home/libraries/gcc-4.9-base_4.9.3-13ubuntu2_amd64.deb 
 
+RUN wget http://launchpadlibrarian.net/253728424/libasan1_4.9.3-13ubuntu2_amd64.deb -O /home/libraries/libasan1_4.9.3-13ubuntu2_amd64.deb 
+RUN dpkg -i /home/libraries/libasan1_4.9.3-13ubuntu2_amd64.deb
+
 RUN wget http://launchpadlibrarian.net/253728426/libgcc-4.9-dev_4.9.3-13ubuntu2_amd64.deb -O /home/libraries/libgcc-4.9-dev_4.9.3-13ubuntu2_amd64.deb 
 RUN dpkg -i /home/libraries/libgcc-4.9-dev_4.9.3-13ubuntu2_amd64.deb
 
-RUN wget http://launchpadlibrarian.net/253728424/libasan1_4.9.3-13ubuntu2_amd64.deb -O /home/libraries/libasan1_4.9.3-13ubuntu2_amd64.deb 
-RUN dpkg -i /home/libraries/libasan1_4.9.3-13ubuntu2_amd64.deb
+
 
 #RUN wget http://launchpadlibrarian.net/253728399/cpp-4.9_4.9.3-13ubuntu2_amd64.deb -O /home/libraries/cpp-4.9_4.9.3-13ubuntu2_amd64.deb 
 #RUN dpkg -i /home/libraries/cpp-4.9_4.9.3-13ubuntu2_amd64.deb
