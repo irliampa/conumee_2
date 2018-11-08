@@ -6,11 +6,9 @@ RUN apt-get install -y libpcre3-dev libbz2-dev liblzma-dev
 
 RUN mkdir /home/libraries
 
-RUN apt-get install libgcc-4.9-dev
+#RUN apt-get install libgcc-4.9-dev
 RUN apt-get install libmpfr4
 RUN apt-get install gcc-4.9-base
-
-
 
 #RUN wget http://launchpadlibrarian.net/247707088/libmpfr4_3.1.4-1_amd64.deb -O /home/libraries/libmpfr4_3.1.4-1_amd64.deb 
 #RUN dpkg -i /home/libraries/libmpfr4_3.1.4-1_amd64.deb
@@ -18,8 +16,8 @@ RUN apt-get install gcc-4.9-base
 #RUN wget http://launchpadlibrarian.net/253728314/gcc-4.9-base_4.9.3-13ubuntu2_amd64.deb -O /home/libraries/gcc-4.9-base_4.9.3-13ubuntu2_amd64.deb 
 #RUN dpkg -i home/libraries/gcc-4.9-base_4.9.3-13ubuntu2_amd64.deb 
 
-#RUN wget http://launchpadlibrarian.net/253728426/libgcc-4.9-dev_4.9.3-13ubuntu2_amd64.deb -O /home/libraries/libgcc-4.9-dev_4.9.3-13ubuntu2_amd64.deb 
-#RUN dpkg -i /home/libraries/libgcc-4.9-dev_4.9.3-13ubuntu2_amd64.deb
+RUN wget http://launchpadlibrarian.net/253728426/libgcc-4.9-dev_4.9.3-13ubuntu2_amd64.deb -O /home/libraries/libgcc-4.9-dev_4.9.3-13ubuntu2_amd64.deb 
+RUN dpkg -i /home/libraries/libgcc-4.9-dev_4.9.3-13ubuntu2_amd64.deb
 
 #RUN wget http://launchpadlibrarian.net/253728424/libasan1_4.9.3-13ubuntu2_amd64.deb -O /home/libraries/libasan1_4.9.3-13ubuntu2_amd64.deb 
 #RUN dpkg -i /home/libraries/libasan1_4.9.3-13ubuntu2_amd64.deb
