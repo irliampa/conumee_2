@@ -7,5 +7,6 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 	BiocManager::install("HDF5Array", version = "3.8")
 	BiocManager::install("GenomicRanges", version = "3.8")
 	BiocManager::install("biomaRt", version = "3.8")
+	BiocManager::install("minfi", version = "3.8")
 	BiocManager::install("conumee", version = "3.8")	
 }
