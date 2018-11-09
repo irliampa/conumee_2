@@ -1,11 +1,11 @@
 update.packages()
 
-libraries <- c("conumee", "biomaRt", "GenomicRanges")
-
-if(!require(libraries)){
-    source("https://bioconductor.org/biocLite.R")
-	    biocLite("DelayedArray", ask = F)
-	    biocLite("HDF5Array", ask = F)
-	    biocLite(libraries, ask = F)
-    lapply(libraries, library, character.only = TRUE)
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+	BiocManager::install()
+	BiocManager::install("DelayedArray", version = "3.8")
+	BiocManager::install("HDF5Array", version = "3.8")
+	BiocManager::install("GenomicRanges", version = "3.8")
+	BiocManager::install("biomaRt", version = "3.8")
+	BiocManager::install("conumee", version = "3.8")	
 }
