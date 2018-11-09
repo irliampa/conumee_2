@@ -24,11 +24,11 @@ RUN dpkg -i /home/libraries/cpp-4.9_4.9.3-13ubuntu2_amd64.deb
 RUN wget http://launchpadlibrarian.net/253728404/gcc-4.9_4.9.3-13ubuntu2_amd64.deb -O /home/libraries/gcc-4.9_4.9.3-13ubuntu2_amd64.deb 
 RUN dpkg -i /home/libraries/gcc-4.9_4.9.3-13ubuntu2_amd64.deb
 
-#RUN wget http://launchpadlibrarian.net/253728432/libstdc++-4.9-dev_4.9.3-13ubuntu2_amd64.deb -O /home/libraries/ibstdc++-4.9-dev_4.9.3-13ubuntu2_amd64.deb
-#RUN dpkg -i /home/libraries/ibstdc++-4.9-dev_4.9.3-13ubuntu2_amd64.deb 
+RUN wget http://launchpadlibrarian.net/253728432/libstdc++-4.9-dev_4.9.3-13ubuntu2_amd64.deb -O /home/libraries/ibstdc++-4.9-dev_4.9.3-13ubuntu2_amd64.deb
+RUN dpkg -i /home/libraries/ibstdc++-4.9-dev_4.9.3-13ubuntu2_amd64.deb 
 
-#RUN wget http://launchpadlibrarian.net/253728401/g++-4.9_4.9.3-13ubuntu2_amd64.deb -O /home/libraries/g++-4.9_4.9.3-13ubuntu2_amd64.deb
-#RUN dpkg -i /home/libraries/g++-4.9_4.9.3-13ubuntu2_amd64.deb
+RUN wget http://launchpadlibrarian.net/253728401/g++-4.9_4.9.3-13ubuntu2_amd64.deb -O /home/libraries/g++-4.9_4.9.3-13ubuntu2_amd64.deb
+RUN dpkg -i /home/libraries/g++-4.9_4.9.3-13ubuntu2_amd64.deb
 
 RUN mkdir /home/scripts
 ADD dependencies.R /home/scripts/dependencies.R
