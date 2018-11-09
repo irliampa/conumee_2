@@ -7,7 +7,7 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 	BiocManager::install("HDF5Array", version = "3.8", update = TRUE, ask = FALSE)
 	BiocManager::install("GenomicRanges", version = "3.8", update = TRUE, ask = FALSE)
 	BiocManager::install("biomaRt", version = "3.8", update = TRUE, ask = FALSE)
-	BiocManager::install("bumphunter", version = "3.9", update = TRUE, ask = FALSE)
+	BiocManager::install("bumphunter", version = "3.8", update = TRUE, ask = FALSE)
 	BiocManager::install("minfi", version = "3.8", update = TRUE, ask = FALSE)
 	BiocManager::install("conumee", version = "3.8", update = TRUE, ask = FALSE)	
 }
