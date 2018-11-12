@@ -1,6 +1,5 @@
 update.packages()
 
-if (!requireNamespace("BiocManager", quietly = TRUE)){
 install.packages("BiocManager")
 BiocManager::install()
 BiocManager::install('remotes')
@@ -12,4 +11,3 @@ BiocManager::install("IlluminaHumanMethylationEPICanno.ilm10b2.hg19", version = 
 BiocManager::install('rafalab/bumphunter', ref = "RELEASE_3_8")
 BiocManager::install("minfi", version = "3.8", update = TRUE, ask = FALSE)
 BiocManager::install("conumee", version = "3.8", update = TRUE, ask = FALSE)	
-}
